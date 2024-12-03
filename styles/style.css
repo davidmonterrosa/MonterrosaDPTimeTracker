@@ -1,7 +1,63 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+/* General Use Section - Start */
 @font-face {
     font-family: "Rubik";
     src: url(../assets/Rubik/Rubik-VariableFont_wght.ttf);
 }
+
+body {
+    background-color: hsl(226, 43%, 10%);   
+}
+
+.bg-dark-blue {
+    border-radius: 15px;
+    background-color:  hsl(235, 46%, 20%);
+}
+
+.inactive-text-blue {
+    color: hsl(235, 45%, 61%);
+}
+
+.text-pale-blue {
+    color: hsl(236, 100%, 87%);
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+/* General Use Section - End */
+
+/* Report Profile - Start */
+.bg-profile-style {
+    border-radius:15px;
+    background-color: hsl(246, 80%, 60%);
+}
+
+.profile-font {
+    font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+/* Report Profile - End */
+
+/* Card Styles Section - Start */
+.card-title {
+    font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.card-display {
+    font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 3.5rem;
+}
+
+.card-info {
+    font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 0.938rem;
+}
+/* Card Styles Section - End */
