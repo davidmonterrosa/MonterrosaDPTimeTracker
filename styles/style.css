@@ -22,37 +22,43 @@
     background-color:  hsl(235, 46%, 20%);
 }
 
-.inactive-text-blue {
-    color: var(--desaturated-blue);
-}
-/* General Use Section - End */
-
-/* Report Profile - Start */
-.bg-profile-style {
-    border-radius:15px;
-    background-color: hsl(246, 80%, 60%);
+.page-margins{
+    display: grid;
+    grid-template-columns: 1.5rem 1fr 1.5rem;
+    grid-template-rows: 5.063rem 1fr 5.063rem;
 }
 
-.profile-font {
-    font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
-    font-weight: 300;
-    font-size: 2.5rem;
+.page-content-center {
+    grid-column: 2;
+    grid-row: 2;
 }
-/* Report Profile - End */
 
-/* Card Styles Section - Start */
+.page-content-bottom {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 203px repeat(6, 10rem);
+    gap: 1.5rem;
+}
+
 .card-title-style {
     color: white;
     font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
     font-size: 1.125rem;
+    margin: 0;
 }
 
 .card-display-style {
     color: white;
     font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
-    font-size: 3.5rem;
+    font-size: 2rem;
+    margin: 0;
 }
 
 .card-info-style {
@@ -60,39 +66,171 @@
     font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 0.938rem;
+    margin: 0;
 }
 
-.max-height-80 {
-    height: 80%;
+.card-padding-x {
+    padding: 0 1.5rem;
 }
+
+.card-padding-y {
+    padding: 1.75rem 0;
+}
+/* General Use Section - End */
+
+/* Report Profile - Start */
+.grid-item-profile {
+    grid-row: 1;
+}
+
+.bg-profile-style {
+    border-radius:15px;
+    background-color: hsl(246, 80%, 60%);
+}
+
+.profile-pic {
+    border: 2px solid white;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    width: 4rem;
+    margin: 2rem 0.75rem 2rem 2rem;
+}
+
+.profile-font {
+    font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+.time-span-text {
+    font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: var(--desaturated-blue);
+    padding: 1.5rem 0;
+    margin: 0;
+}
+/* Report Profile - End */
+
 
 /* Work Card - Start */
 .bg-orange {
     background-image: url(../assets/images/icon-work.svg);
     background-repeat: no-repeat;
-    background-position: 90% ;
+    background-position: 95% -14%;
     border-radius: 15px;
     background-color: hsl(15, 100%, 70%);
 }
 .bg-soft-blue {
+    background-image: url(../assets/images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -14%;
     border-radius: 15px;
     background-color: hsl(195, 74%, 62%);
 }
 .bg-light-red {
+    background-image: url(../assets/images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -14%;
     border-radius: 15px;
     background-color: hsl(348, 100%, 68%);
 }
 .bg-lime-green {
+    background-image: url(../assets/images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -14%;
     border-radius: 15px;
     background-color: hsl(145, 58%, 55%);
 }
 .bg-violet {
+    background-image: url(../assets/images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -14%;
     border-radius: 15px;
     background-color: hsl(264, 64%, 52%);
 }
 .bg-yellow {
+    background-image: url(../assets/images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -14%;
     border-radius: 15px;
     background-color: hsl(43, 84%, 65%);
 }
 /* Work Card - End */
-/* Card Styles Section - End */
+
+/* #################### Tablet View - Start #################### */
+@media (min-width:768px) {
+    .page-margins{
+        display: grid;
+        grid-template-columns: 1.5rem 1fr 1.5rem;
+        grid-template-rows: 5.063rem 1fr 5.063rem;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 203px repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+
+    .grid-item-profile {
+        grid-row: 1 /span 2;
+    }
+
+    .profile-pic {
+        width: 78px;
+    }
+
+    .profile-font {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .card-display-style {
+        font-size: 3.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .bg-orange {
+        background-position: 90% -7%;
+    }
+    .bg-soft-blue {
+        background-position: 90% -3%;
+    }
+    .bg-light-red {
+        background-position: 90% -5%;
+    }
+    .bg-lime-green {
+        background-position: 90% 0%;
+    }
+    .bg-violet {
+        background-position: 90% -10%;
+    }
+    .bg-yellow {
+        background-position: 90% -7%;
+    }    
+}
+/* #################### Tablet View - End #################### */
+
+/* #################### Desktop View - Start #################### */
+@media (min-width: 1200px) {
+    .page-margins{
+        height: 100vh;
+        grid-template-columns: 11.5% 1fr 11.5%;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 15.25rem);
+        gap: 1.875rem;
+    }
+
+    .grid-item-profile {
+        grid-row: 1 /span 2;
+    }
+
+}
+/* #################### Desktop View - End #################### */
