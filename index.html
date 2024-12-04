@@ -12,10 +12,14 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 
-<body>
-  <div class="bg-dark-blue">
+<body class="bg-very-dark-blue">
+
+  <!-- Profile Section - Start -->
+  <div class="bg-dark-blue ">
     <div class="bg-profile-style">
       <img src="./assets/images/image-jeremy.png" alt="Picture of Jeremy Robson">
       <p>
@@ -25,36 +29,61 @@
         Jeremy Robson
       </h2>
     </div>
-
-    <p>
+    
+    <p id="daily">
       Daily
     </p>
-
-    <p>
+    
+    <p id="weekly">
       Weekly
     </p>
-
-    <p>
+    
+    <p id="monthly">
       Monthly
     </p>
-
   </div>
+  <!-- Profile Section - End -->
 
-  <div>
-    <div class="bg-dark-blue">
-      Work
-      5hrs <!-- daily -->
-      Previous - 7hrs <!-- daily -->
-      32hrs <!-- weekly -->
-      Previous - 36hrs <!-- weekly -->
-      103hrs <!-- monthly -->
-      Previous - 128hrs <!-- monthly -->
+  <!-- Cards Section - Start -->
+  <!-- Work Card - Start -->
+  <div class="bg-orange">
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-end">
+          <img src="./assets/images/icon-work.svg" alt="Icon Work">
+        </div>
+      </div>
+    </div> -->
+    <div class="container-fluid bg-dark-blue max-height-">
+        <div class="row">
+          <div class="col d-flex justify-content-between">
+            <span class="card-title-style"> Work </span>
+            <span> <img src="./assets/images/icon-ellipsis.svg" alt="Ellipsis"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col card-display-style">
+            5hrs <!-- daily -->
+            <!-- 32hrs --> <!-- weekly -->
+            <!-- 103hrs --> <!-- monthly -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col card-info-style">
+            Previous - 7hrs <!-- daily -->
+            <!--Previous - 36hrs weekly -->
+            <!--Previous - 128hrs monthly -->
+          </div>
+        </div>
     </div>
-
+    
   </div>
-
-  <div>
-    <div class="bg-dark-blue">
+  <!-- Work Card - End -->
+  
+  <!-- Play Card - Start -->
+  <div class="bg-soft-blue">
+    <img src="./assets/images/icon-play.svg" alt="Icon Play">
+    <div class="bg-dark-blue ">
       Play
       1hr <!-- daily -->
       Previous - 2hrs <!-- daily -->
@@ -63,11 +92,14 @@
       23hrs <!-- monthly -->
       Previous - 29hrs <!-- monthly -->
     </div>
-
+    
   </div>
-
-  <div>
-    <div class="bg-dark-blue">
+  <!-- Play Card - End -->
+  
+  <!-- Study Card - Start -->
+  <div class="bg-light-red">
+    <img src="./assets/images/icon-study.svg" alt="Icon Study">
+    <div class="bg-dark-blue ">
       Study
       0hrs <!-- daily -->
       Previous - 1hr <!-- daily -->
@@ -76,11 +108,14 @@
       13hrs <!-- monthly -->
       Previous - 19hrs <!-- monthly -->
     </div>
-
+    
   </div>
-
-  <div>
-    <div class="bg-dark-blue">
+  <!-- Study Card - End -->
+  
+  <!-- Exercise Card - Start -->
+  <div class="bg-lime-green">
+    <img src="./assets/images/icon-exercise.svg" alt="Icon Exercise">
+    <div class="bg-dark-blue ">
       Exercise
       1hr <!-- daily -->
       Previous - 1hr <!-- daily -->
@@ -89,11 +124,14 @@
       11hrs <!-- monthly -->
       Previous - 18hrs <!-- monthly -->
     </div>
-
+    
   </div>
-
-  <div>
-    <div class="bg-dark-blue">
+  <!-- Exercise Card - End -->
+  
+  <!-- Social Card - Start -->
+  <div class="bg-violet">
+    <img src="./assets/images/icon-social.svg" alt="Icon Social">
+    <div class="bg-dark-blue ">
       Social
       1hr <!-- daily -->
       Previous - 3hrs <!-- daily -->
@@ -102,11 +140,14 @@
       21hrs <!-- monthly -->
       Previous - 23hrs <!-- monthly -->
     </div>
-
+    
   </div>
-
-  <div>
-    <div class="bg-dark-blue">
+  <!-- Social Card - End -->
+  
+  <!-- Self Care Card - Start -->
+  <div class="bg-yellow">
+    <img src="./assets/images/icon-self-care.svg" alt="Icon Self Care">
+    <div class="bg-dark-blue ">
       Self Care
       0hrs <!-- daily -->
       Previous - 1hr <!-- daily -->
@@ -115,21 +156,25 @@
       7hrs <!-- monthly -->
       Previous - 11hrs <!-- monthly -->
     </div>
-
+    
   </div>
-
-
-
-
-
-
-
-
+  <!-- Self Care Card - End -->
+  <!-- Cards Section - End -->
+  
+  
+  
+  
+  
+  
+  
+  
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">David Monterrosa</a>.
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="./scripts/app.js"></script>
 </body>
 
 </html>

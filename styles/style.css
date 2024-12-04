@@ -1,3 +1,9 @@
+:root {
+    --pale-blue: hsl(236, 100%, 87%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -7,7 +13,7 @@
     src: url(../assets/Rubik/Rubik-VariableFont_wght.ttf);
 }
 
-body {
+.bg-very-dark-blue {
     background-color: hsl(226, 43%, 10%);   
 }
 
@@ -17,15 +23,7 @@ body {
 }
 
 .inactive-text-blue {
-    color: hsl(235, 45%, 61%);
-}
-
-.text-pale-blue {
-    color: hsl(236, 100%, 87%);
-}
-
-.text-white {
-    color: #FFFFFF;
+    color: var(--desaturated-blue);
 }
 /* General Use Section - End */
 
@@ -43,21 +41,58 @@ body {
 /* Report Profile - End */
 
 /* Card Styles Section - Start */
-.card-title {
+.card-title-style {
+    color: white;
     font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
     font-size: 1.125rem;
 }
 
-.card-display {
+.card-display-style {
+    color: white;
     font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
     font-size: 3.5rem;
 }
 
-.card-info {
+.card-info-style {
+    color: var(--pale-blue);
     font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 0.938rem;
 }
+
+.max-height-80 {
+    height: 80%;
+}
+
+/* Work Card - Start */
+.bg-orange {
+    background-image: url(../assets/images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: 90% ;
+    border-radius: 15px;
+    background-color: hsl(15, 100%, 70%);
+}
+.bg-soft-blue {
+    border-radius: 15px;
+    background-color: hsl(195, 74%, 62%);
+}
+.bg-light-red {
+    border-radius: 15px;
+    background-color: hsl(348, 100%, 68%);
+}
+.bg-lime-green {
+    border-radius: 15px;
+    background-color: hsl(145, 58%, 55%);
+}
+.bg-violet {
+    border-radius: 15px;
+    background-color: hsl(264, 64%, 52%);
+}
+.bg-yellow {
+    border-radius: 15px;
+    background-color: hsl(43, 84%, 65%);
+}
+/* Work Card - End */
 /* Card Styles Section - End */
