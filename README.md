@@ -97,3 +97,8 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+
+### PEER REVIEW
+
+Alexander Soria: Your recration is really well done! You got the design down to a tee, and its fully responsive to how it's shown in the prototype. Your data is populated nicely, and changes through each of the three options easily. I do like the detail of the highlighted option remaining highlighted when that's the hours being shown (weekly staying highlighted when the weekly hours are being shown, for example). I genuinely cannot find anything wrong with this page. You did an amazing job!
