@@ -18,11 +18,11 @@ Your users should be able to:
 ### _GitHub Repository Link:_
 [Time Tracker Repository](https://github.com/davidmonterrosa/MonterrosaDPTimeTracker.git)
 
-## Change Log
+### Change Log
 + mm/dd/yyyy - DM - short description
 - 12/2/2024 - DM - Created git repository.
 
-### PEER REVIEW
+## PEER REVIEW
 
 Peer Reviewed By:Alexander Soria
 >Your recration is really well done! You got the design down to a tee, and its fully responsive to how it's shown in the prototype. Your data is populated nicely, and changes through each of the three options easily. I do like the detail of the highlighted option remaining highlighted when that's the hours being shown (weekly staying highlighted when the weekly hours are being shown, for example). I genuinely cannot find anything wrong with this page. You did an amazing job!
