@@ -108,9 +108,12 @@
     font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 1.125rem;
-    color: var(--desaturated-blue);
     padding: 1.5rem 0;
     margin: 0;
+}
+
+.inactive-text-blue {
+    color: var(--desaturated-blue);
 }
 
 #daily:hover {
@@ -263,18 +266,18 @@
 @media (min-width:768px) {
     .page-margins{
         display: grid;
-        grid-template-columns: 1.5rem 1fr 1.5rem;
-        grid-template-rows: 5.063rem 1fr 5.063rem;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 1fr 2fr 1fr;
     }
     
     .card-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 203px repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 1.5rem;
     }
 
     .grid-item-profile {
-        grid-row: 1 /span 2;
+        grid-row: 1 /span 3;
     }
 
     .profile-pic {
