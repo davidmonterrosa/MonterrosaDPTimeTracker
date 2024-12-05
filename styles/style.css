@@ -96,6 +96,11 @@
     margin: 2rem 0.75rem 2rem 2rem;
 }
 
+
+.margin-profile-text {
+    margin: 0 1.5rem 0 0;
+}
+
 .profile-font {
     font-family: "Rubik", Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
@@ -262,22 +267,66 @@
 }
 /* Self Care Card - End */
 
+/* #################### Phablet View - Start #################### */
+@media (min-width: 455px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 203px repeat(3, 10rem);
+    }
+
+    .grid-item-profile {
+        grid-column: 1 / span 2;
+    }
+
+    .bg-orange {
+        background-position: 90% 0%;
+    }
+
+    .bg-soft-blue {
+        background-position: 90% 0%;
+    }
+
+    .bg-light-red {
+        background-position: 90% 0%;
+    }
+
+    .bg-lime-green {
+        background-position: 90% 10%;
+    }
+
+    .bg-violet {
+        background-position: 90% -10%;
+    }
+
+    .bg-yellow {
+        background-position: 90% 4%;
+    }
+}
+/* #################### Phablet View - End #################### */
+
 /* #################### Tablet View - Start #################### */
 @media (min-width:768px) {
     .page-margins{
         display: grid;
         grid-template-columns: 5% 1fr 5%;
-        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-rows: 15% 1fr 15%;
     }
     
     .card-grid {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 15.25rem);
         gap: 1.5rem;
     }
 
     .grid-item-profile {
+        grid-column: 1;
         grid-row: 1 /span 3;
+    }
+
+    .bg-profile-style {
+        height: 67%;
+        padding: 0 0 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .profile-pic {
@@ -285,7 +334,7 @@
     }
 
     .margin-profile-text {
-        margin: 0 0 4rem 2rem;
+        margin: 0 2rem 4rem;
     }
 
     .profile-font {
@@ -302,21 +351,27 @@
     .bg-orange {
         background-position: 90% -7%;
     }
+
     .bg-soft-blue {
         background-position: 90% -3%;
     }
+
     .bg-light-red {
         background-position: 90% -5%;
     }
+
     .bg-lime-green {
         background-position: 90% 0%;
     }
+
     .bg-violet {
         background-position: 90% -10%;
     }
+
     .bg-yellow {
         background-position: 90% -7%;
     }
+
 
     .time-span-text {
         margin: 0 0 0 2rem ;
@@ -343,5 +398,12 @@
         grid-row: 1 /span 2;
     }
 
+    .profile-pic {
+        box-shadow: 0px 5px 8px -3px black;
+    }
+
+    .time-span-text {
+        padding: 0 0 1rem 0;
+    }
 }
 /* #################### Desktop View - End #################### */
